@@ -28,9 +28,9 @@ public class test3 extends Applet{
 	}
 	void drawBar(int x,int by,int w,int d,Graphics g){
 		if(d>0){
-			g.drawRect(x,by-d,w,d);
+			g.drawRect(x,by-d,w,d);/*正のデータをグラフ描画*/
 		}else{
-			g.drawRect(x, by, w, d);
+			g.drawRect(x, by, w, -d);/*負のデータをグラフ描画*/
 		}
 	}	
 	}
